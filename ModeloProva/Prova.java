@@ -19,17 +19,13 @@ public class Prova {
     }
 
     public void adicionarQuestao(Questao q) {
-        questoes.add(q);
-    }
+        questoes.add(q); }
 
 
     public Prova copiar() {
         Prova nova = new Prova(this.titulo, this.turma, this.data, this.versao);
 
-        for (Questao q : this.questoes) {
-            nova.adicionarQuestao(q.copiar());
-        }
-
+        for (Questao q : this.questoes) {nova.adicionarQuestao(q.copiar());}
         return nova;
     }
 
@@ -50,24 +46,16 @@ public class Prova {
         }
     }
 
-    public List<Questao> getQuestoes() {
-        return questoes;
-    }
+    public List<Questao> getQuestoes() {return questoes;}
 
-    public void setTurma(String turma) {
-        this.turma = turma;
-    }
+    public void setTurma(String turma) {this.turma = turma;}
 
-    public void setData(String data) {
-        this.data = data;
-    }
+    public void setData(String data) {this.data = data;}
 
-    public void setVersao(String versao) {
-        this.versao = versao;
-    }
+    public void setVersao(String versao) {this.versao = versao;}
 
     public void printResumo() {
-        System.out.println("----------------------------");
+        System.out.println("\\\\\\\\\\\\\\\\\\\\\\");
         System.out.println("Título: " + titulo);
         System.out.println("Turma: " + turma);
         System.out.println("Data: " + data);
